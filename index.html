@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Day...</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══ NAV ══════════════════════════════ -->
+  <nav>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Fotos</a>
+    <a href="#memorias">Memórias</a>
+    <a href="#mensagem">Mensagem</a>
+    <a href="/fotos.html">Galeria</a>
+  </nav>
+
+
+  <!-- ══ HERO ═════════════════════════════ -->
+  <section class="hero" id="inicio">
+
+    <!-- Decoração: raios de sol (starburst) -->
+    <svg class="hero-starburst" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="100" y1="0"   x2="100" y2="200" stroke="black" stroke-width="1"/>
+      <line x1="0"   y1="100" x2="200" y2="100" stroke="black" stroke-width="1"/>
+      <line x1="15"  y1="15"  x2="185" y2="185" stroke="black" stroke-width="1"/>
+      <line x1="185" y1="15"  x2="15"  y2="185" stroke="black" stroke-width="1"/>
+      <line x1="50"  y1="0"   x2="150" y2="200" stroke="black" stroke-width=".7"/>
+      <line x1="150" y1="0"   x2="50"  y2="200" stroke="black" stroke-width=".7"/>
+      <line x1="0"   y1="50"  x2="200" y2="150" stroke="black" stroke-width=".7"/>
+      <line x1="0"   y1="150" x2="200" y2="50"  stroke="black" stroke-width=".7"/>
+      <line x1="75"  y1="0"   x2="125" y2="200" stroke="black" stroke-width=".5"/>
+      <line x1="125" y1="0"   x2="75"  y2="200" stroke="black" stroke-width=".5"/>
+      <line x1="0"   y1="75"  x2="200" y2="125" stroke="black" stroke-width=".5"/>
+      <line x1="0"   y1="125" x2="200" y2="75"  stroke="black" stroke-width=".5"/>
+    </svg>
+
+    <svg class="hero-starburst-right" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <line x1="100" y1="0"   x2="100" y2="200" stroke="black" stroke-width="1"/>
+      <line x1="0"   y1="100" x2="200" y2="100" stroke="black" stroke-width="1"/>
+      <line x1="15"  y1="15"  x2="185" y2="185" stroke="black" stroke-width="1"/>
+      <line x1="185" y1="15"  x2="15"  y2="185" stroke="black" stroke-width="1"/>
+      <line x1="50"  y1="0"   x2="150" y2="200" stroke="black" stroke-width=".7"/>
+      <line x1="150" y1="0"   x2="50"  y2="200" stroke="black" stroke-width=".7"/>
+    </svg>
+
+    <div class="hero-content">
+      <p class="hero-subtitle fade-up">uma data especial</p>
+      <span class="hero-happy fade-up" style="transition-delay: .1s">Feliz nosso dia!!</span>
+      <span class="hero-name  fade-up" style="transition-delay: .25s" id="hero-name">Maria Clara Frutuoso dos Santos</span>
+      <p class="hero-date     fade-up" style="transition-delay: .4s"  id="hero-date">14 · 06 · 2026</p>
+      <a href="#galeria" class="hero-btn fade-up" style="transition-delay: .5s">Ver Memórias</a>
+    </div>
+
+  </section>
+
+
+  <!-- ══ TICKER ════════════════════════════ -->
+  <div class="ticker-wrap">
+    <div class="ticker-track" id="ticker">
+    </div>
+  </div>
+
+
+  <!-- ══ FEATURE (nota + foto) ════════════ -->
+  <section class="feature" id="sobre">
+
+    <div class="feature-img">
+      <img src="image/Foto01.webp" alt="foto destaque">
+    </div>
+
+    <div class="feature-text">
+      <p class="feature-label"><em>Little Note:</em> de quem mais te ama.</p>
+      <h2 id="feature-title">Cada momento ao seu lado<br>é um presente.</h2>
+      <p id="feature-body">
+        Hoje é o seu dia, e eu queria que você soubesse o quanto você é amada.
+      </p>
+      <div class="tags" id="tags">
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ══ FILMSTRIP GALLERY ════════════════ -->
+  <div class="filmstrip" id="galeria">
+
+    <div class="filmstrip-label">
+      <span>▶ 20</span>
+      <span>KODAK 400</span>
+      <span>▶ 21</span>
+      <span>KODAK PORTRA</span>
+      <span>▶ 22</span>
+    </div>
+
+    <div class="filmstrip-grid">
+      <div class="film-cell">
+        <img src="image/Foto02.webp" alt="foto destaque">
+      </div>
+
+      <!-- CÉLULA 2 -->
+      <div class="film-cell">
+        <img src="image/Foto05.webp" alt="foto destaque">
+        <div class="film-sticker">my love ♡</div>
+      </div>
+
+      <!-- CÉLULA 3 -->
+      <div class="film-cell">
+        <img src="image/Foto04.webp" alt="foto destaque">
+      </div>
+
+    </div><!-- /filmstrip-grid -->
+
+    <div class="filmstrip-label-bottom">
+      <span>▶ 20</span>
+      <span>KODAK PORTRA</span>
+      <span>FF1 2010TX</span>
+      <span>▶ 21</span>
+      <span>▶ 22</span>
+    </div>
+
+  </div><!-- /filmstrip -->
+
+
+  <!-- ══ MUSIC ════════════════════════════ -->
+  <section class="music-section" id="memorias">
+    <div class="music-inner">
+
+      <div class="music-text">
+        <p class="music-label">— nossa música —</p>
+        <h2 class="music-title">A nossa<br><em>Trilha sonora.</em></h2>
+        <p class="music-body">
+          Toda vez que essa música toca, eu penso em você.
+        </p>
+      </div>
+
+      <div class="music-player">
+        <iframe
+          id="spotify-player"
+          src="https://open.spotify.com/embed/track/2plbrEY59IikOBgBGLjaoe?si=ojZEU_enQ2-y54vm6IfKGw&theme=0"
+          width="100%"
+          height="352"
+          frameborder="0"
+          allowfullscreen
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy"
+        ></iframe>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══ CLOSING ═══════════════════════════ -->
+<section class="closing" id="mensagem">
+  <div class="closing-scribble">iconic</div>
+  <div class="closing-scribble2">perfect night</div>
+
+  <div class="closing-balloon">
+    <p class="closing-decor fade-up">— uma mensagem especial —</p>
+    <h2 class="fade-up" style="transition-delay: .1s">
+      Um <em>dia especial</em><br>
+      para a pessoa mais<br>
+      <strong>especial</strong> do mundo.
+    </h2>
+  </div>
+
+  <p class="fade-up" style="transition-delay: .25s" id="closing-text">
+    Que este não seja o último aniversário que a gente celebra juntos.
+  </p>
+</section>
+
+
+  <!-- ══ FOOTER ════════════════════════════ -->
+  <footer>
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Fotos</a>
+    <a href="#memorias">Memórias</a>
+    <a href="#mensagem">Mensagem</a>
+  </footer>
+
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
