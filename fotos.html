@@ -299,15 +299,15 @@
       </div>
 
       <div class="mosaic-cell cell-tall">
-        <img src="image/Foto07.webp" alt="foto 7" loading="lazy">
+        <img src="image/Foto08.webp" alt="foto 7" loading="lazy">
       </div>
 
       <div class="mosaic-cell cell-tall">
-        <img src="image/Foto08.webp" alt="foto 8" loading="lazy">
+        <img src="image/Foto09.webp" alt="foto 8" loading="lazy">
       </div>
 
       <div class="mosaic-cell cell-wide">
-        <img src="image/Foto09.webp" alt="foto 9" loading="lazy">
+        <img src="image/Foto10.webp" alt="foto 9" loading="lazy">
       </div>
 
       <div class="mosaic-cell">
@@ -419,7 +419,11 @@
     document.querySelectorAll('.mosaic-cell').forEach((cell, i) => {
       cell.style.opacity = '0';
       cell.style.transform = 'translateY(16px)';
-      cell.style.transition = `opacity .6s ease ${i * 0.04}s, transform .6s ease ${i * 0.04}s`;
+      
+      // O delay vai variar apenas entre 0s, 0.05s, 0.10s e 0.15s, independente do número de fotos
+      const delay = (i % 4) * 0.05;
+      cell.style.transition = `opacity .6s ease ${delay}s, transform .6s ease ${delay}s`;
+      
       observer.observe(cell);
     });
   </script>
